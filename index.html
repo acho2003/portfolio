@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H4CK3R_P0RTF0L10 - Terminal Access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- Main Terminal Container -->
+    <div class="terminal-container">
+        <!-- Terminal Header -->
+        <div class="terminal-header">
+            <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">H4CK3R_T3RM1N4L_v3.1.337</div>
+            <div class="terminal-actions">
+                <button id="theme-toggle" class="action-btn">Matrix</button>
+                <button id="audio-toggle" class="action-btn" title="Enable Audio">🔇</button>
+            </div>
+        </div>
+        
+        <!-- Terminal Content -->
+        <div class="terminal-content">
+            <!-- Welcome Message -->
+            <div id="welcome-message" class="welcome-section">
+                <div class="typewriter-text">WELCOME TO THE MATRIX</div>
+                <div class="system-info">
+                    <div class="typewriter-text">System initialized. Awaiting command input...</div>
+                    <div class="typewriter-text">Active connections: 1337</div>
+                </div>
+            </div>
+            
+            <!-- Terminal Output -->
+            <div id="terminal-output"></div>
+            
+            <!-- Command Input -->
+            <div class="command-line">
+                <span class="prompt">root@h4ck3r-portfolio:~$ </span>
+                <input type="text" id="command-input" autocomplete="off" spellcheck="false">
+                <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Content Container (Hidden by default) -->
+    <div id="page-container" class="page-container hidden">
+        <div class="page-header">
+            <div class="page-title">H4CK3R_T3RM1N4L_v2.1.337</div>
+            <div class="page-actions">
+                <button id="theme-toggle-page" class="action-btn">Matrix</button>
+                <button id="audio-toggle-page" class="action-btn" title="Enable Audio">🔇</button>
+                <button id="back-to-terminal" class="action-btn">Back to Terminal</button>
+            </div>
+        </div>
+        <div id="page-content" class="page-content"></div>
+    </div>
+    
+    <!-- Hacking Animation Overlay -->
+    <div id="hacking-overlay" class="hacking-overlay hidden">
+    <div class="hacking-content">
+        <div class="hacking-text">Accessing Chencho’s brain…</div>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-text">0%</div>
+        </div>
+        <div class="hacking-logs">
+            <div class="log-line">Locating caffeine receptors…</div>
+            <div class="log-line">Bypassing unfiltered brain…</div>
+            <div class="log-line">Decrypting random late-night code…</div>
+            <div class="log-line">Injecting meme module…</div>
+            <div class="log-line">Access to Chencho’s genius granted!</div>
+        </div>
+    </div>
+</div>
+    <!-- Audio Context -->
+    <audio id="ambient-audio" loop>
+        <!-- Audio will be generated via Web Audio API -->
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
