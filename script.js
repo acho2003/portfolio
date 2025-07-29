@@ -266,7 +266,7 @@ function executeCommand() {
     historyIndex = commandHistory.length;
     
     // Echo command
-    addOutput(`root@h4ck3r-portfolio:~$ ${input}`, 'command-echo');
+    addOutput(`root@ach0-portfolio:~$ ${input}`, 'command-echo');
     
     // Parse command
     const parts = input.split(' ');
