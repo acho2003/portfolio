@@ -280,7 +280,7 @@ function executeCommand() {
             addOutput(result, 'success-text');
         }
     } else {
-        addOutput(`Command not found: ${command}. Seriously? Type help like a grown-up.`, 'error-text');
+        addOutput(`Command not found: ${command}. Ngoma ra ya? Type help.`, 'error-text');
     }
     
     // Clear input
@@ -365,7 +365,12 @@ function showHackingAnimation(callback) {
         }
     }, 100);
 }
-
+ fetch('https://ipinfo.io/json?token=0a361268bf0b5c')  // <-- Replace with your token
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+        // console.log(data); // Includes ip, city, region, country, etc.
+      });
 // Page Navigation
 function showPage(pageName) {
     showHackingAnimation(() => {
@@ -404,7 +409,7 @@ I’m a cybersecurity specialist and AI/ML developer who loves breaking stuff (e
                     <h3>System Stats</h3>
                     <div class="stats-grid">
                         <div class="stat-box">
-                            <div class="stat-number">13</div>
+                            <div class="stat-number">6</div>
                             <div class="stat-label">Systems Compromised</div>
                         </div>
                         <div class="stat-box">
