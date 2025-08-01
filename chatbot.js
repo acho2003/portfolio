@@ -1,23 +1,8 @@
-/**
- * chatbot.js
- * 
- * This script extends the existing `script.js` to integrate a chatbot
- * into the hacker-themed portfolio website. It handles the frontend UI
- * for the chatbot, including command parsing, displaying chat messages,
- * and communicating with a backend server for Gemini API requests.
- */
 
-// Global Variables (extend existing ones or define new if necessary)
-// Assuming `commandInput`, `terminalOutput`, `addOutput`, `commands` are already defined in script.js
 
 let chatMode = false;
 let chatHistory = [];
 
-// User's bio to be fed to the chatbot for context
-const userBio = `
-I am a cybersecurity specialist and full-stack developer known as "The Hacker". 
-... (omitted for brevity) ...
-`;
 
 // Chat typing animation parameters
 const TYPING_SPEED = 20; // milliseconds per character
@@ -165,4 +150,4 @@ const chatStyles = `
 `;
 document.head.appendChild(Object.assign(document.createElement('style'), { textContent: chatStyles }));
 
-// Note: Load this script after script.js so that dependencies are available.
+
