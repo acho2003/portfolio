@@ -26,6 +26,7 @@ const commands = {
         execute: () => {
             return `Available commands:
 
+chat          - Start AI assistant chat mode(anything about me)
 about         - Display information about the hacker
 skills        - Show technical capabilities and expertise
 projects      - Browse portfolio of completed missions
@@ -365,12 +366,7 @@ function showHackingAnimation(callback) {
         }
     }, 100);
 }
- fetch('https://ipinfo.io/json?token=0a361268bf0b5c')  // <-- Replace with your token
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('output').textContent = JSON.stringify(data, null, 2);
-        // console.log(data); // Includes ip, city, region, country, etc.
-      });
+
 // Page Navigation
 function showPage(pageName) {
     showHackingAnimation(() => {
