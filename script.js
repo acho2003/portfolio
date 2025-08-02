@@ -26,7 +26,7 @@ const commands = {
         execute: () => {
             return `Available commands:
 
-chat          - Start AI assistant chat mode(anything about me)
+chat          - Start AI assistant chat mode
 about         - Display information about the hacker
 skills        - Show technical capabilities and expertise
 projects      - Browse portfolio of completed missions
