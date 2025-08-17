@@ -26,7 +26,7 @@ const commands = {
         execute: () => {
             return `Available commands:
 
-chat          - Start AI assistant chat mode
+chat          - Start AI assistant chat mode(anything about me)
 about         - Display information about the hacker
 skills        - Show technical capabilities and expertise
 projects      - Browse portfolio of completed missions
@@ -514,32 +514,209 @@ I’m a cybersecurity specialist and AI/ML developer who loves breaking stuff (e
             
         case 'projects':
             content = `
-                    <div class="page-section">
-        <h1 class="page-heading">project.db</h1>
-        <!-- Changed from "Access granted." to "Access denied." -->
-        <p class="section-subtitle">Decrypting log entries... Access denied.</p>
-        
-        <!-- Replace the posts list with a denial message -->
-        <div class="access-denied">
-            <p>You do not have permission to view this content.</p>
-        </div>
-    </div>
+                <div class="page-section">
+                    <h1 class="page-heading">PROJECT_PORTFOLIO.exe</h1>
+                    <p class="section-subtitle">Scanning project database... Mission archives retrieved.</p>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card" onclick="showProjectModal('quantumcrypt')">
+                            <div class="project-header">
+                                <h3>Dzongkha OCR</h3>
+                                <span class="project-category security">Web App(AI)</span>
+                            </div>
+                            <p class="project-description">This project implements Optical Character Recognition (OCR) for Dzongkha script using Convolutional Neural Networks (CNN). The system is designed to accurately recognize and digitize Dzongkha text from images or scanned documents.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Html</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" onclick="showProjectModal('pentestai')">
+                            <div class="project-header">
+                                <h3>ChatBot</h3>
+                                <span class="project-category security">Web App</span>
+                            </div>
+                            <p class="project-description">A straightforward Go-based chatbot using PostgreSQL for handling GET, UPDATE, and other database operations. Perfect for learning how to integrate Go with PostgreSQL for simple data interactions and response management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">GO</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Html</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Sorig Dongdrem</h3>
+                                <span class="project-category webapp">Web App</span>
+                            </div>
+                            <p class="project-description">A basic simulation of the Sorig Dongdrem using HTML and JavaScript. This project demonstrates how to create a simple interactive model of traditional practices, ideal for exploring web-based simulations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Html</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                          <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Space shooter</h3>
+                                <span class="project-category webapp">Game App</span>
+                            </div>
+                            <p class="project-description">A simple 2D space shooter game built with Java. In this game, players control a spaceship, navigating through space while shooting down incoming enemy ships and avoiding obstacles. The goal is to survive as long as possible and achieve the highest score.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">JavaFX</span>
+                                <span class="tech-tag">Game Development</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Employee Management</h3>
+                                <span class="project-category webapp">Web App App</span>
+                            </div>
+                            <p class="project-description">A simple management using node js and mongodb with front end</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node js</span>
+                                <span class="tech-tag">Mongo DB</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Chatbot</h3>
+                                <span class="project-category webapp">AI Model</span>
+                            </div>
+                            <p class="project-description">fined-tuned gpt_model for bhutan history and geography</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Speed Dodging</h3>
+                                <span class="project-category webapp">Game APP</span>
+                            </div>
+                            <p class="project-description">Speed Dodging is a fast-paced, 2D Java-based car racing game where the player navigates an endless road, dodging AI-controlled enemy cars to survive as long as possible. Developed using Java and LibGDX, the game is an educational demonstration of Object-Oriented Programming (OOP) concepts and software design patterns.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">LibGDX</span>
+                                <span class="tech-tag">Game Development</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Mathematical Expression Recognition (MER)</h3>
+                                <span class="project-category webapp">Web APP(AI)</span>
+                            </div>
+                            <p class="project-description">This project focuses on recognizing handwritten mathematical expressions using a deep learning-based system. The approach leverages a hybrid model combining Convolutional Neural Networks (CNNs) with Transformers to accurately interpret and convert handwritten mathematical symbols into machine-readable formats like LaTeX.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Html</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>EHTT</h3>
+                                <span class="project-category webapp">Web APP</span>
+                            </div>
+                            <p class="project-description"></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Html</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                          <div class="project-card" onclick="showProjectModal('securechat')">
+                            <div class="project-header">
+                                <h3>Campus Club Connect</h3>
+                                <span class="project-category webapp">Web APP</span>
+                            </div>
+                            <p class="project-description"></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <div class="project-stats">
+                                <span class="status active">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             `;
             break;
             
         case 'contact':
-            content = `
-                    <div class="page-section">
-        <h1 class="page-heading">Contact.db</h1>
-        <!-- Changed from "Access granted." to "Access denied." -->
-        <p class="section-subtitle">Decrypting log entries... Access denied.</p>
-        
-        <!-- Replace the posts list with a denial message -->
-        <div class="access-denied">
-            <p>You do not have permission to view this content.</p>
-        </div>
-    </div>
-            `;
+            content =   content = `
+                <div class="page-section">
+                    <h1 class="page-heading">SECURE_COMMUNICATION.exe</h1>
+                    <p class="section-subtitle">Establishing encrypted channel... Ready for transmission.</p>
+                    
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name:</label>
+                            <input type="text" id="contact-name" placeholder="Enter your codename">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email:</label>
+                            <input type="email" id="contact-email" placeholder="secure@email.com">
+                        </div>
+                        
+                        
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Message:</label>
+                            <textarea id="contact-message" rows="6" placeholder="Enter your encrypted message..."></textarea>
+                        </div>
+                        
+                        <button type="button" class="submit-btn" onclick="submitContactForm()">
+                            TRANSMIT MESSAGE
+                        </button>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Alternative Communication Channels</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <strong>Email:</strong> achochencho@gmail.com
+                            </div>
+                            <div class="contact-method">
+                                <strong>Telegram:</strong>@achobatman
+                            </div>
+                            <div class="contact-method">
+                                <strong>GitHub:</strong> github.com/acho2003
+                            </div>
+                            <div class="contact-method">
+                                <strong>LinkedIn:</strong> www.linkedin.com/in/chencho-wangdi-370a43306
+                            </div>
+                        </div>
+                        
+                     
+                    </div>
+                </div>
+            `;;
             break;
             
         case 'blog':
